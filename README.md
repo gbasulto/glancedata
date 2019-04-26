@@ -4,7 +4,8 @@ glancedata
 ==========
 
 <!-- badges: start -->
-<!-- badges: end -->
+[![Travis build status](https://travis-ci.org/gbasulto/glancedata.svg?branch=master)](https://travis-ci.org/gbasulto/glancedata) <!-- badges: end -->
+
 The goal of glancedata is to ...
 
 Installation
