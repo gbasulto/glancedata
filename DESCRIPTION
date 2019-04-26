@@ -22,4 +22,5 @@ Imports:
     tibble,
     tidyr
 Suggests: 
-    testthat
+    testthat,
+    covr

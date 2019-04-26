@@ -4,7 +4,7 @@ glancedata
 ==========
 
 <!-- badges: start -->
-[![Travis build status](https://travis-ci.org/gbasulto/glancedata.svg?branch=master)](https://travis-ci.org/gbasulto/glancedata) [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/gbasulto/glancedata?branch=master&svg=true)](https://ci.appveyor.com/project/gbasulto/glancedata) <!-- badges: end -->
+[![Travis build status](https://travis-ci.org/gbasulto/glancedata.svg?branch=master)](https://travis-ci.org/gbasulto/glancedata) [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/gbasulto/glancedata?branch=master&svg=true)](https://ci.appveyor.com/project/gbasulto/glancedata) [![Codecov test coverage](https://codecov.io/gh/gbasulto/glancedata/branch/master/graph/badge.svg)](https://codecov.io/gh/gbasulto/glancedata?branch=master) <!-- badges: end -->
 
 The goal of glancedata is to ...
 
