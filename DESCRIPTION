@@ -23,4 +23,6 @@ Imports:
     tidyr
 Suggests: 
     testthat,
-    covr
+    covr,
+    spelling
+Language: en-US
