@@ -4,7 +4,7 @@ glancedata
 ==========
 
 <!-- badges: start -->
-[![Travis build status](https://travis-ci.org/gbasulto/glancedata.svg?branch=master)](https://travis-ci.org/gbasulto/glancedata) <!-- badges: end -->
+[![Travis build status](https://travis-ci.org/gbasulto/glancedata.svg?branch=master)](https://travis-ci.org/gbasulto/glancedata) [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/gbasulto/glancedata?branch=master&svg=true)](https://ci.appveyor.com/project/gbasulto/glancedata) <!-- badges: end -->
 
 The goal of glancedata is to ...
 
@@ -43,7 +43,5 @@ summary(cars)
 You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
 
 You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
 
 In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!
