@@ -4,7 +4,7 @@
 \alias{glance_data}
 \title{Glance Data}
 \usage{
-glance_data(x, limit2tally = 5)
+glance_data(x, limit2tally = 20)
 }
 \arguments{
 \item{x}{A dataframe with named columns.}

@@ -45,7 +45,7 @@
 ##' @export
 glance_data_in_workbook <- function(dataframe,
                                         filename = NULL,
-                                        limit2tally = 5) {
+                                        limit2tally = 20) {
     .data <- NULL
 
     ## All

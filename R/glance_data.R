@@ -105,7 +105,7 @@ count_distinc_values <- function (x) {
 ##' glance_data(iris)
 ##' @author Guillermo Basulto-Elias
 ##' @export
-glance_data <- function(x, limit2tally = 5) {
+glance_data <- function(x, limit2tally = 20) {
     x <- as.list(x)
 
     tibble(

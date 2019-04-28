@@ -4,7 +4,7 @@
 \alias{glance_data_in_workbook}
 \title{Export glance data to Excel Workbook}
 \usage{
-glance_data_in_workbook(dataframe, filename = NULL, limit2tally = 5)
+glance_data_in_workbook(dataframe, filename = NULL, limit2tally = 20)
 }
 \arguments{
 \item{dataframe}{Dataframe to be summarized}
