@@ -3,25 +3,26 @@
 check_type <- function(x) {
   ## Types to check for.
   out <-
-    c(is.numeric(x),
+    c(all(is.na(x)),
+      is.numeric(x),
       is.logical(x),
       is.factor(x),
-      is.character(x),
-      all(is.na(x)))
+      is.character(x))
 
   ## Index of type
   out <- which.max(out)
 
   ## Check column type is defined. "5" is the number if specifies
   ## types.
-  if (! (out %in% 1:5)) stop("Column type not recognized.")
+  if (!(out %in% 1:5)) stop("Column type not recognized.")
 
   ## Return the column type.
-  switch(out, "numerical",
+  switch(out,
+         "NA only",
+         "numerical",
          "logical",
          "factor",
-         "categorical",
-         "NA only")
+         "categorical")
 }
 
 summarize_num_vector <- function(x, fun, ...) {
