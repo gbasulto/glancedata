@@ -1,0 +1,44 @@
+---
+title: "Complete example of 'glancedata' package"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Complete example of glancedata}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+In this example we are going to use `USArrests`, which contains statistics, in arrests per 100,000 residents for assault, murder, and rape in each of the 50 US states in 1973. Also given is the percent of the population living in urban areas, according to the data set description (type `help("USArrests")` in the console to see more details).
+
+There are many packages useful 
+
+```{r setup}
+library(glancedata)
+
+sample_data <- USArrests
+
+head(sample_data)
+
+# knitr::kable(skimr::skim(sample_data))
+#skimr::skim(sample_data)
+
+```
+
+# frerf
+
+sfw
+
+```{r}
+1 + 1
+#skimr::skim(iris)
+```
+
+# vedrf
+
+sdfga
