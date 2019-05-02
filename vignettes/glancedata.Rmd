@@ -1,5 +1,6 @@
 ---
 title: "Complete example of 'glancedata' package"
+author: "Guillermo Basulto-Elias"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Complete example of glancedata}
@@ -16,17 +17,60 @@ knitr::opts_chunk$set(
 
 In this example we are going to use `USArrests`, which contains statistics, in arrests per 100,000 residents for assault, murder, and rape in each of the 50 US states in 1973. Also given is the percent of the population living in urban areas, according to the data set description (type `help("USArrests")` in the console to see more details).
 
-There are many packages useful 
 
-```{r setup}
+```{r setup, message=FALSE, cache=TRUE}
 library(glancedata)
+library(dplyr)
+library(tidyr)
+library(knitr)
 
 sample_data <- USArrests
 
-head(sample_data)
+head(sample_data, 10)
 
-# knitr::kable(skimr::skim(sample_data))
-#skimr::skim(sample_data)
+
+```
+
+
+## Use of `skmimr`
+
+There are many packages useful 
+
+
+```{r, eval = FALSE, dependson= "setup"}
+## Load package
+library(skimr)
+
+## Call main function
+skim(sample_data)
+```
+
+
+```{r, dependson = "setup", echo = FALSE}
+
+library(glancedata)
+library(dplyr)
+library(tidyr)
+library(knitr)
+
+tmp <- skimr::skim(sample_data)
+
+
+tmp %>%
+  filter(stat != "hist") %>%
+  select(-formatted) %>%
+  spread(stat, value) %>%
+  kable()
+
+tmp %>%
+  filter(stat == "hist") %>%
+  select(-value, -level, -stat) %>%
+  # spread(stat, value) %>%
+  kable()
+
+
+  
+
 
 ```
 
