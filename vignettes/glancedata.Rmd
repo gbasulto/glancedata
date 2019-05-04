@@ -63,8 +63,8 @@ pkg_list <- list(
   ## plot_discrete_vars
   c(
     pkg = "`glancedata`",
-    fnct = "`plot_numerical_vars`",
-    des = "Creates a plot per numerical variable. It might be histogram, density plot, qqplot, violin plot or scatterplot."
+    fnct = "`plot_discrete_vars`",
+    des = "Creates a plot per variable with up to 20 different values. This limit can be adjusted.."
   )
 ,
   
@@ -174,5 +174,8 @@ glance_data_in_workbook(sample_data)
 ## vedrf
 
 sdfga
+
+
+
 
 ## Future versions
