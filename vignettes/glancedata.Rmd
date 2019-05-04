@@ -152,13 +152,23 @@ tmp %>%
 
 ```
 
-## frerf
+## `glance_data`
 
-## sfw
+```{r, dependson= "setup"}
+
+library(glancedata)
+
+glance_data(sample_data)
+
+```
+
+## `glance_data_in_workbook`
 
 ```{r}
-1 + 1
-#skimr::skim(iris)
+library(glancedata)
+
+glance_data_in_workbook(sample_data)
+
 ```
 
 ## vedrf
