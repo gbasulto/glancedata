@@ -20,7 +20,9 @@ knitr::opts_chunk$set(
 [![Codecov test coverage](https://codecov.io/gh/gbasulto/glancedata/branch/master/graph/badge.svg)](https://codecov.io/gh/gbasulto/glancedata?branch=master)
 <!-- badges: end -->
 
-The goal of glancedata is to ...
+Whenever I start working on a dataset, I need to take a glance at the data to see how the data are or it the format is the one that I am  expecting. I found myself coding similar lines over and over again with each data set I put my hands on. I decided to put that lines together in an R package so I and others can use them. I called it **`glancedata`**.
+
+There are some already cool R packages to summarize information. Two of the best, in my opinion, are `skimr` and `GGally`. In this vignette, I provide examples of the functions in `glancedata` as well as some of the functions in these two packages.
 
 ## Installation
 
@@ -29,6 +31,57 @@ You can install the released version of glancedata from [CRAN](https://CRAN.R-pr
 ``` r
 install.packages("glancedata")
 ```
+
+## Functions
+Whenever I start working on a dataset, I need to take a glance at the data to see how the data are or it the format is the one that I am  expecting. I found myself coding similar lines over and over again with each data set I put my hands on. I decided to put that lines together in an R package so I and others can use them. I called it **`glancedata`**.
+
+There are some already cool R packages to summarize information. Two of the best, in my opinion, are `skimr` and `GGally`. In this vignette, I provide examples of the functions in `glancedata` as well as some of the functions in these two packages.
+
+Below is a table with the functions shown in this vignette.
+
+
+```{r, echo = FALSE, message=FALSE}
+
+library(dplyr)
+
+pkg_list <- list(
+
+  ## glance_data
+  c(
+    fnct = "`glance_data`",
+    des = "Alternative to `summary`. Emphasizes missing data and binary variables."
+  ),
+  
+  ## glance_data_in_workbook
+  c(
+    fnct = "`glance_data_in_workbook`",
+    des = "Similar to `glance_data`. Creates list of dataframes instead and saves XLSX file."
+  ),
+  
+  ## plot_numerical_vars
+  c(
+    fnct = "`plot_numerical_vars`",
+    des = "Creates a plot per numerical variable. It might be histogram, density plot, qqplot, violin plot or scatterplot."
+  )
+,
+  
+  ## plot_discrete_vars
+  c(
+    fnct = "`plot_numerical_vars`",
+    des = "Creates a plot per numerical variable. It might be histogram, density plot, qqplot, violin plot or scatterplot."
+  )
+) ## End list
+
+
+pkg_list %>%
+  purrr::map_df(~ tibble(Function = .x[1], 
+                         Description = .x[2])) %>%
+  knitr::kable()
+  
+```
+
+
+
 
 ## Example
 
@@ -39,18 +92,3 @@ library(glancedata)
 ## basic example code
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE, eval = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!
