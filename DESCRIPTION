@@ -20,7 +20,8 @@ Imports:
     openxlsx,
     purrr,
     tibble,
-    tidyr
+    tidyr,
+    gridExtra
 Suggests: 
     testthat,
     covr,
@@ -28,5 +29,7 @@ Suggests:
     knitr,
     rmarkdown,
     skimr
+Depends: 
+    R (>= 3.5) 
 Language: en-US
 VignetteBuilder: knitr
