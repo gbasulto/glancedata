@@ -3,7 +3,7 @@ Type: Package
 Title: Generate tables and plots to get summaries of data
 Version: 1.0.0
 Authors@R: person("Guillermo", "Basulto-Elias", 
-                  email = "guillermo basulto@gmail.com",
+                  email = "guillermobasulto@gmail.com",
   role = c("aut", "cre")) 
 Description: Generate data frames for all the variables with some summaries and also some plots for numerical variables.
     Several functions from the 'tidyverse' and 'GGally' packages are used.
