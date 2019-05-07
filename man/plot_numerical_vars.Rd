@@ -42,7 +42,7 @@ Graphical summaries of numerical variables using functions from
 \code{ggplot2} and \code{GGally}.
 }
 \examples{
-library(GGally)
+library(glancedata)
 
 plot_numerical_vars(iris, "pairwise")
 plot_numerical_vars(iris, "density")

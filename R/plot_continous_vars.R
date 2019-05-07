@@ -37,7 +37,7 @@
 ##'     geom_histogram facet_wrap coord_flip theme aes element_blank
 ##'     geom_rug geom_jitter theme_bw stat_qq stat_qq_line
 ##' @examples
-##' library(GGally)
+##' library(glancedata)
 ##'
 ##' plot_numerical_vars(iris, "pairwise")
 ##' plot_numerical_vars(iris, "density")
