@@ -23,7 +23,7 @@ Imports:
     tidyr,
     gridExtra
 Suggests:
-    testthat,
+    testthat (>= 2.1.0),
     covr,
     spelling,
     knitr,

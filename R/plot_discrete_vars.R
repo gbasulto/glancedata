@@ -86,6 +86,8 @@ plot_discrete_vars <- function(x,
 ## plot_discrete_vars(mtcars)
 ## plot_discrete_vars(mtcars, sort_by_frequency = TRUE)
 ## plot_discrete_vars(iris)
+##
+## Warnings
 ## plot_discrete_vars(cars)
 ## plot_discrete_vars(state.x77)
 
