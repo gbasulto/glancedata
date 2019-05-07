@@ -44,7 +44,7 @@ plot_discrete_vars <- function(x,
     }
 
     ## Keep variables with few levels.
-    x <- select_if(x, ~ length(unique(.x)) <= nvalues)
+    x <- select_if(x, ~ length(unique(.x)) < nvalues + 1)
 
     ## Column names
     nam <- colnames(x)

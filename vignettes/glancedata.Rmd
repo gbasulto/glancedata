@@ -171,10 +171,6 @@ glance_data_in_workbook(sample_data)
 
 ```
 
-## vedrf
-
-sdfga
-
 
 
 
