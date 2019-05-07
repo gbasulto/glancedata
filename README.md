@@ -33,7 +33,7 @@ Below is a table with the functions shown in this vignette.
 | `glance_data`             | Alternative to `summary`. Emphasizes missing data and binary variables.                                         |
 | `glance_data_in_workbook` | Similar to `glance_data`. Creates list of dataframes instead and saves XLSX file.                               |
 | `plot_numerical_vars`     | Creates a plot per numerical variable. It might be histogram, density plot, qqplot, violin plot or scatterplot. |
-| `plot_numerical_vars`     | Creates a plot per numerical variable. It might be histogram, density plot, qqplot, violin plot or scatterplot. |
+| `plot_discrete_vars`      | Creates a plot per numerical variable. It might be histogram, density plot, qqplot, violin plot or scatterplot. |
 
 Example
 -------
@@ -42,5 +42,13 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(glancedata)
+#> Registered S3 methods overwritten by 'ggplot2':
+#>   method         from 
+#>   [.quosures     rlang
+#>   c.quosures     rlang
+#>   print.quosures rlang
+#> Registered S3 method overwritten by 'GGally':
+#>   method from   
+#>   +.gg   ggplot2
 ## basic example code
 ```

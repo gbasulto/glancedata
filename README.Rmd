@@ -67,7 +67,7 @@ pkg_list <- list(
   
   ## plot_discrete_vars
   c(
-    fnct = "`plot_numerical_vars`",
+    fnct = "`plot_discrete_vars`",
     des = "Creates a plot per numerical variable. It might be histogram, density plot, qqplot, violin plot or scatterplot."
   )
 ) ## End list
