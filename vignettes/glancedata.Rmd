@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 ```
 
 
-Whenever I start working on a dataset, I need to take a glance at the data to see how the data are or it the format is the one that I am  expecting. I found myself coding similar lines over and over again with each data set I put my hands on. I decided to put that lines together in an R package so I and others can use them. I called it **`glancedata`**.
+Whenever I start working on a dataset, I need to take a glance at the data to see how the data are or if the format is the one that I am  expecting. I found myself coding similar lines over and over again with each data set I put my hands on. I decided to put that lines together in an R package so I and others can use them. I called it **`glancedata`**.
 
 There are some already cool R packages to summarize information. Two of the best, in my opinion, are `skimr` and `GGally`. In this vignette, I provide examples of the functions in `glancedata` as well as some of the functions in these two packages.
 
