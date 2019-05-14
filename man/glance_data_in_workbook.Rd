@@ -51,13 +51,11 @@ summary of a column is included in "binary", it will not be
 included in "numerical".
 }
 \examples{
+## Create a list of dataframes. If you provide the `filename`
+## parameter to be equal to, say, "myglance.xlsx", then it will
+## create an Excel workbook and place the content of each
+## dataframe in a separate sheet.
 glance_data_in_workbook(iris)
-
-## If you want to save the list into an XLSX file, add the name of
-#the file.
-\dontrun{
-glance_data_in_workbook(iris, "summary_of_iris.xlsx")
-}
 }
 \author{
 Guillermo Basulto-Elias

@@ -24,10 +24,10 @@
 ##' plot_discrete_vars(mtcars, sort_by_frequency = TRUE)
 ##' plot_discrete_vars(iris)
 ##'
-##' \dontrun{
+##' ## The following two examples give a warning because they don't
+##' ## have any variable with fewer than 15 different values.
 ##' plot_discrete_vars(cars)
 ##' plot_discrete_vars(state.x77)
-##' }
 ##' @author Guillermo Basulto-Elias
 ##' @export
 plot_discrete_vars <- function(x,
