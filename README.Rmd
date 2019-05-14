@@ -42,7 +42,7 @@ install.packages("glancedata")
 
 ## Functions
 
-These are the main functions in the package.
+These are the main functions in the package. You can see their documentation with `help`, e.g., `help("glance_data")`.
 
 ```{r, echo = FALSE, message=FALSE}
 
