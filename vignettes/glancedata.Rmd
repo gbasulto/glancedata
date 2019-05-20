@@ -172,6 +172,18 @@ glance_data_in_workbook(sample_data)
 ```
 
 
+## Testing a date mode
 
+```{r}
+
+library(readr)
+library(dplyr)
+
+## Read data with dates from FiveThirtyEight
+polls <- 
+  read_csv("https://github.com/fivethirtyeight/data/tree/master/polls") 
+
+
+```
 
 ## Future versions
