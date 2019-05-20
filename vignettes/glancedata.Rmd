@@ -174,7 +174,7 @@ glance_data_in_workbook(sample_data)
 
 ## Testing a date mode
 
-```{r}
+```{r, eval = FALSE}
 
 library(readr)
 library(dplyr)
