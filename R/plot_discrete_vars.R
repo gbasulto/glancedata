@@ -71,7 +71,7 @@ plot_discrete_vars <- function(x,
         map(~ .x + theme_bw() + coord_flip())
 
     ## Add names
-    x <- map2(x, nam, function(u, v) u + xlab(v))
+    x <- map2(x, nam, function(u, v) u + xlab(v) + ylab(''))
 
 
     x <- gridExtra::grid.arrange(grobs = x,
