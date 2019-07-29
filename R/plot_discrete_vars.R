@@ -13,7 +13,7 @@
 ##'     generating the plot.
 ##' @return A GGplot object.
 ##' @importFrom ggplot2 ggplot theme_void theme_bw coord_flip qplot
-##'     xlab
+##'     xlab ylab
 ##' @importFrom purrr map map2
 ##' @importFrom dplyr select_if
 ##' @importFrom forcats fct_inorder
