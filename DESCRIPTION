@@ -1,7 +1,7 @@
 Package: glancedata
 Type: Package
 Title: Generate tables and plots to get summaries of data
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: person("Guillermo", "Basulto-Elias", 
                   email = "guillermobasulto@gmail.com",
   role = c("aut", "cre")) 
