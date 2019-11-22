@@ -5,6 +5,7 @@ Version: 1.0.1
 Authors@R: person("Guillermo", "Basulto-Elias", 
                   email = "guillermobasulto@gmail.com",
   role = c("aut", "cre")) 
+Date: 2019-11-22
 Description: Generate data frames for all the variables with some summaries and also some plots for numerical variables.
     Several functions from the 'tidyverse' and 'GGally' packages are used.
 License: GPL-3
