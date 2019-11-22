@@ -136,18 +136,8 @@ library(tidyr)
 library(knitr)
 library(skimr)
 
-tmp <- skim(sample_data)
+skim(sample_data)
 
-kable(tmp)
-
-tmp %>%
-  filter(stat == "hist") %>%
-  select(-value, -level, -stat) %>%
-  # spread(stat, value) %>%
-  kable()
-
-
-  
 
 
 ```
